@@ -32,6 +32,8 @@ class VerificationViewController: UIViewController {
         spacing: 20
     )
 
+    private let verificationModel = VerificationModel()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -61,13 +63,23 @@ class VerificationViewController: UIViewController {
         print("Tapped")
     }
 
+    private func reloadCollectionView() {
+        UIView.transition(
+            with: collectionView,
+            duration: 0.1,
+            options: .transitionCrossDissolve
+        ) {
+            self.collectionView.reloadData()
+        }
+    }
+
 }
 
 // MARK: - UICollectionViewDataSource
 
 extension VerificationViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        6
+        verificationModel.filteredMailArray.count
     }
 
     func collectionView(
@@ -83,6 +95,9 @@ extension VerificationViewController: UICollectionViewDataSource {
             return UICollectionViewCell()
         }
 
+        let mailLabelText = verificationModel.filteredMailArray[indexPath.row]
+        cell.cellConfigure(mailLabelText)
+
         return cell
     }
 }
@@ -91,19 +106,53 @@ extension VerificationViewController: UICollectionViewDataSource {
 
 extension VerificationViewController: SelectProposedMailProtocol {
     func selectProposedMail(indexPath: IndexPath) {
-        print(indexPath)
+        setupProposedMail(indexPath)
     }
+
+    private func setupProposedMail(_ indexPath: IndexPath) {
+        guard let text = mailTextField.text else { return }
+        verificationModel.getMailName(text: text)
+        let domainMail = verificationModel.filteredMailArray[indexPath.row]
+        let mailFullName = verificationModel.nameMail + domainMail
+        mailTextField.text = mailFullName
+        updateViews(mailFullName)
+    }
+
+    private func updateViews(_ mail: String) {
+        statusLabel.isValid = mail.isValid()
+        verificationButton.isValid = mail.isValid()
+        verificationModel.filteredMailArray = []
+        reloadCollectionView()
+    }
+
 }
 
 // MARK: - ActionsMailTextFieldProtocol
 
 extension VerificationViewController: ActionsMailTextFieldProtocol {
     func typingText(text: String) {
-        print(text)
+        verificationModel.getFilteredMail(text: text)
+        reloadCollectionView()
+        setupValidation(text: text)
     }
 
     func cleanOutTextField() {
-        print("clear")
+        setupCleanOutTextField()
+    }
+
+    private func setupValidation(text: String) {
+        statusLabel.isValid = text.isValid()
+        verificationButton.isValid = text.isValid()
+        if text == "" {
+            setupCleanOutTextField()
+        }
+    }
+
+    private func setupCleanOutTextField() {
+        statusLabel.setDefaultSettings()
+        verificationButton.setDefaultSettings()
+        verificationModel.filteredMailArray = []
+        reloadCollectionView()
     }
 }
 

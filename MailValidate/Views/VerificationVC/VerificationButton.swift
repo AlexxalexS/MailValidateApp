@@ -10,6 +10,16 @@ import UIKit
 
 class VerificationButton: UIButton {
 
+    public var isValid = false {
+        didSet {
+            if self.isValid {
+                setValidSetting()
+            } else {
+                setNotValidSetting()
+            }
+        }
+    }
+
     override init(frame: CGRect) {
         super.init(frame: frame)
 
@@ -29,6 +39,20 @@ class VerificationButton: UIButton {
         isEnabled = false
         alpha = 0.5
         translatesAutoresizingMaskIntoConstraints = false
+    }
+
+    private func setNotValidSetting() {
+        isEnabled = false
+        alpha = 0.5
+    }
+
+    private func setValidSetting() {
+        isEnabled = true
+        alpha = 1
+    }
+
+    public func setDefaultSettings() {
+        configure()
     }
 
 }

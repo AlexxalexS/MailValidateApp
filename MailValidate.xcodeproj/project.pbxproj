@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		97662640282AC82300F33ADB /* Collection + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9766263F282AC82300F33ADB /* Collection + Extension.swift */; };
+		97662643282AC93900F33ADB /* MailApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97662642282AC93900F33ADB /* MailApiKey.swift */; };
+		97662645282AC9F700F33ADB /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97662644282AC9F700F33ADB /* NetworkRequest.swift */; };
+		97662647282ACBE700F33ADB /* MailResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97662646282ACBE700F33ADB /* MailResponseModel.swift */; };
+		979EDA3B282AADC0002B00D9 /* VerificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979EDA3A282AADC0002B00D9 /* VerificationModel.swift */; };
+		979EDA3D282AB214002B00D9 /* String + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979EDA3C282AB214002B00D9 /* String + Extension.swift */; };
 		97B58FC0282A8035001FE192 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B58FBF282A8035001FE192 /* AppDelegate.swift */; };
 		97B58FC4282A8035001FE192 /* VerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B58FC3282A8035001FE192 /* VerificationViewController.swift */; };
 		97B58FC9282A8037001FE192 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97B58FC8282A8037001FE192 /* Assets.xcassets */; };
@@ -21,6 +27,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9766263F282AC82300F33ADB /* Collection + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection + Extension.swift"; sourceTree = "<group>"; };
+		97662642282AC93900F33ADB /* MailApiKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailApiKey.swift; sourceTree = "<group>"; };
+		97662644282AC9F700F33ADB /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		97662646282ACBE700F33ADB /* MailResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailResponseModel.swift; sourceTree = "<group>"; };
+		979EDA3A282AADC0002B00D9 /* VerificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationModel.swift; sourceTree = "<group>"; };
+		979EDA3C282AB214002B00D9 /* String + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Extension.swift"; sourceTree = "<group>"; };
 		97B58FBC282A8035001FE192 /* MailValidate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MailValidate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97B58FBF282A8035001FE192 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97B58FC3282A8035001FE192 /* VerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +59,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		97662641282AC91400F33ADB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				97662642282AC93900F33ADB /* MailApiKey.swift */,
+				97662644282AC9F700F33ADB /* NetworkRequest.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		97B58FB3282A8035001FE192 = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +91,7 @@
 				97B58FD4282A8158001FE192 /* Models */,
 				97B58FD5282A816E001FE192 /* Views */,
 				97B58FD6282A8183001FE192 /* Controllers */,
+				97662641282AC91400F33ADB /* Network */,
 				97B58FDA282A85D1001FE192 /* Extensions */,
 				97B58FD7282A81A4001FE192 /* Resourses */,
 			);
@@ -87,6 +109,8 @@
 		97B58FD4282A8158001FE192 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				979EDA3A282AADC0002B00D9 /* VerificationModel.swift */,
+				97662646282ACBE700F33ADB /* MailResponseModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -122,6 +146,8 @@
 			isa = PBXGroup;
 			children = (
 				97B58FDE282A87B2001FE192 /* UIKit */,
+				979EDA3C282AB214002B00D9 /* String + Extension.swift */,
+				9766263F282AC82300F33ADB /* Collection + Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -224,12 +250,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97662645282AC9F700F33ADB /* NetworkRequest.swift in Sources */,
+				97662647282ACBE700F33ADB /* MailResponseModel.swift in Sources */,
+				979EDA3B282AADC0002B00D9 /* VerificationModel.swift in Sources */,
 				97B58FC4282A8035001FE192 /* VerificationViewController.swift in Sources */,
 				97B58FE6282A8F39001FE192 /* MailsCollectionView.swift in Sources */,
 				97B58FE9282A91E9001FE192 /* MailsCollectionViewCell.swift in Sources */,
+				97662640282AC82300F33ADB /* Collection + Extension.swift in Sources */,
 				97B58FE4282A8C9A001FE192 /* VerificationButton.swift in Sources */,
 				97B58FDD282A8630001FE192 /* Color + Extension.swift in Sources */,
+				97662643282AC93900F33ADB /* MailApiKey.swift in Sources */,
 				97B58FE2282A88B9001FE192 /* MailTextField.swift in Sources */,
+				979EDA3D282AB214002B00D9 /* String + Extension.swift in Sources */,
 				97B58FD9282A8483001FE192 /* StatusLabel.swift in Sources */,
 				97B58FE0282A880E001FE192 /* UIStackView + Extension.swift in Sources */,
 				97B58FC0282A8035001FE192 /* AppDelegate.swift in Sources */,
