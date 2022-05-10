@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		97B58FC0282A8035001FE192 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B58FBF282A8035001FE192 /* AppDelegate.swift */; };
+		97B58FC4282A8035001FE192 /* VerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B58FC3282A8035001FE192 /* VerificationViewController.swift */; };
+		97B58FC9282A8037001FE192 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97B58FC8282A8037001FE192 /* Assets.xcassets */; };
+		97B58FCC282A8037001FE192 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97B58FCA282A8037001FE192 /* LaunchScreen.storyboard */; };
+		97B58FD9282A8483001FE192 /* StatusLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B58FD8282A8483001FE192 /* StatusLabel.swift */; };
+		97B58FDD282A8630001FE192 /* Color + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B58FDC282A8630001FE192 /* Color + Extension.swift */; };
+		97B58FE0282A880E001FE192 /* UIStackView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B58FDF282A880E001FE192 /* UIStackView + Extension.swift */; };
+		97B58FE2282A88B9001FE192 /* MailTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B58FE1282A88B9001FE192 /* MailTextField.swift */; };
+		97B58FE4282A8C9A001FE192 /* VerificationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B58FE3282A8C9A001FE192 /* VerificationButton.swift */; };
+		97B58FE6282A8F39001FE192 /* MailsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B58FE5282A8F39001FE192 /* MailsCollectionView.swift */; };
+		97B58FE9282A91E9001FE192 /* MailsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B58FE8282A91E9001FE192 /* MailsCollectionViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		97B58FBC282A8035001FE192 /* MailValidate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MailValidate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		97B58FBF282A8035001FE192 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		97B58FC3282A8035001FE192 /* VerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationViewController.swift; sourceTree = "<group>"; };
+		97B58FC8282A8037001FE192 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		97B58FCB282A8037001FE192 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		97B58FCD282A8037001FE192 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97B58FD8282A8483001FE192 /* StatusLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusLabel.swift; sourceTree = "<group>"; };
+		97B58FDC282A8630001FE192 /* Color + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color + Extension.swift"; sourceTree = "<group>"; };
+		97B58FDF282A880E001FE192 /* UIStackView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView + Extension.swift"; sourceTree = "<group>"; };
+		97B58FE1282A88B9001FE192 /* MailTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailTextField.swift; sourceTree = "<group>"; };
+		97B58FE3282A8C9A001FE192 /* VerificationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationButton.swift; sourceTree = "<group>"; };
+		97B58FE5282A8F39001FE192 /* MailsCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailsCollectionView.swift; sourceTree = "<group>"; };
+		97B58FE8282A91E9001FE192 /* MailsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailsCollectionViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		97B58FB9282A8035001FE192 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		97B58FB3282A8035001FE192 = {
+			isa = PBXGroup;
+			children = (
+				97B58FBE282A8035001FE192 /* MailValidate */,
+				97B58FBD282A8035001FE192 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		97B58FBD282A8035001FE192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				97B58FBC282A8035001FE192 /* MailValidate.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		97B58FBE282A8035001FE192 /* MailValidate */ = {
+			isa = PBXGroup;
+			children = (
+				97B58FD3282A813D001FE192 /* Application */,
+				97B58FD4282A8158001FE192 /* Models */,
+				97B58FD5282A816E001FE192 /* Views */,
+				97B58FD6282A8183001FE192 /* Controllers */,
+				97B58FDA282A85D1001FE192 /* Extensions */,
+				97B58FD7282A81A4001FE192 /* Resourses */,
+			);
+			path = MailValidate;
+			sourceTree = "<group>";
+		};
+		97B58FD3282A813D001FE192 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				97B58FBF282A8035001FE192 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		97B58FD4282A8158001FE192 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		97B58FD5282A816E001FE192 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				97B58FE7282A91CF001FE192 /* Cells */,
+				97B58FEA282A93C2001FE192 /* VerificationVC */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		97B58FD6282A8183001FE192 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				97B58FC3282A8035001FE192 /* VerificationViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		97B58FD7282A81A4001FE192 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				97B58FC8282A8037001FE192 /* Assets.xcassets */,
+				97B58FCA282A8037001FE192 /* LaunchScreen.storyboard */,
+				97B58FCD282A8037001FE192 /* Info.plist */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		97B58FDA282A85D1001FE192 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				97B58FDE282A87B2001FE192 /* UIKit */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		97B58FDE282A87B2001FE192 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				97B58FDC282A8630001FE192 /* Color + Extension.swift */,
+				97B58FDF282A880E001FE192 /* UIStackView + Extension.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		97B58FE7282A91CF001FE192 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				97B58FE8282A91E9001FE192 /* MailsCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		97B58FEA282A93C2001FE192 /* VerificationVC */ = {
+			isa = PBXGroup;
+			children = (
+				97B58FD8282A8483001FE192 /* StatusLabel.swift */,
+				97B58FE1282A88B9001FE192 /* MailTextField.swift */,
+				97B58FE3282A8C9A001FE192 /* VerificationButton.swift */,
+				97B58FE5282A8F39001FE192 /* MailsCollectionView.swift */,
+			);
+			path = VerificationVC;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		97B58FBB282A8035001FE192 /* MailValidate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97B58FD0282A8037001FE192 /* Build configuration list for PBXNativeTarget "MailValidate" */;
+			buildPhases = (
+				97B58FB8282A8035001FE192 /* Sources */,
+				97B58FB9282A8035001FE192 /* Frameworks */,
+				97B58FBA282A8035001FE192 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MailValidate;
+			productName = MailValidate;
+			productReference = 97B58FBC282A8035001FE192 /* MailValidate.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		97B58FB4282A8035001FE192 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					97B58FBB282A8035001FE192 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 97B58FB7282A8035001FE192 /* Build configuration list for PBXProject "MailValidate" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 97B58FB3282A8035001FE192;
+			productRefGroup = 97B58FBD282A8035001FE192 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				97B58FBB282A8035001FE192 /* MailValidate */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		97B58FBA282A8035001FE192 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97B58FCC282A8037001FE192 /* LaunchScreen.storyboard in Resources */,
+				97B58FC9282A8037001FE192 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		97B58FB8282A8035001FE192 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97B58FC4282A8035001FE192 /* VerificationViewController.swift in Sources */,
+				97B58FE6282A8F39001FE192 /* MailsCollectionView.swift in Sources */,
+				97B58FE9282A91E9001FE192 /* MailsCollectionViewCell.swift in Sources */,
+				97B58FE4282A8C9A001FE192 /* VerificationButton.swift in Sources */,
+				97B58FDD282A8630001FE192 /* Color + Extension.swift in Sources */,
+				97B58FE2282A88B9001FE192 /* MailTextField.swift in Sources */,
+				97B58FD9282A8483001FE192 /* StatusLabel.swift in Sources */,
+				97B58FE0282A880E001FE192 /* UIStackView + Extension.swift in Sources */,
+				97B58FC0282A8035001FE192 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		97B58FCA282A8037001FE192 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97B58FCB282A8037001FE192 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		97B58FCE282A8037001FE192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		97B58FCF282A8037001FE192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		97B58FD1282A8037001FE192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5FWDYC534G;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MailValidate/Resourses/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.MailValidate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		97B58FD2282A8037001FE192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5FWDYC534G;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MailValidate/Resourses/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.MailValidate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		97B58FB7282A8035001FE192 /* Build configuration list for PBXProject "MailValidate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97B58FCE282A8037001FE192 /* Debug */,
+				97B58FCF282A8037001FE192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97B58FD0282A8037001FE192 /* Build configuration list for PBXNativeTarget "MailValidate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97B58FD1282A8037001FE192 /* Debug */,
+				97B58FD2282A8037001FE192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 97B58FB4282A8035001FE192 /* Project object */;
+}
