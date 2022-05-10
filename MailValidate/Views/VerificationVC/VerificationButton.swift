@@ -38,6 +38,7 @@ class VerificationButton: UIButton {
         titleLabel?.font = UIFont(name: "Avenir Book", size: 17)
         isEnabled = false
         alpha = 0.5
+        heightAnchor.constraint(equalToConstant: 40).isActive = true
         translatesAutoresizingMaskIntoConstraints = false
     }
 

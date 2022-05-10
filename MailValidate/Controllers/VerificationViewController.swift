@@ -13,6 +13,7 @@ class VerificationViewController: UIViewController {
         let imageView = UIImageView()
         imageView.image = UIImage(named: "background")
         imageView.contentMode = .scaleAspectFill
+        imageView.applyBlurEffect()
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
@@ -51,12 +52,24 @@ class VerificationViewController: UIViewController {
     }
 
     private func setupNotification() {
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(keyboardWillShow),
+            name: UIResponder.keyboardWillShowNotification,
+            object: nil
+        )
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(keyboardWillHide),
+            name: UIResponder.keyboardWillHideNotification,
+            object: nil
+        )
     }
 
     @objc private func keyboardWillShow(notification: NSNotification) {
-        guard let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else {
+        guard
+            let keyboardSize =
+                (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else {
             return
         }
 
@@ -92,7 +105,9 @@ class VerificationViewController: UIViewController {
 
                 if result.success {
                     guard let didYouMeanError = result.didYouMean else {
-                        Alert.showResultAlert(vc: self, message: "Mail status: \(result.result) \n \(result.reasonDescription)")
+                        Alert.showResultAlert(
+                            vc: self,
+                            message: "Mail status: \(result.result) \n \(result.reasonDescription)")
                         return
                     }
 
@@ -120,6 +135,11 @@ class VerificationViewController: UIViewController {
         ) {
             self.collectionView.reloadData()
         }
+    }
+
+    deinit {
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
     }
 
 }
