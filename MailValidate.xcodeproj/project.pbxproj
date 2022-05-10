@@ -11,6 +11,8 @@
 		97662643282AC93900F33ADB /* MailApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97662642282AC93900F33ADB /* MailApiKey.swift */; };
 		97662645282AC9F700F33ADB /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97662644282AC9F700F33ADB /* NetworkRequest.swift */; };
 		97662647282ACBE700F33ADB /* MailResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97662646282ACBE700F33ADB /* MailResponseModel.swift */; };
+		97662649282ACE9900F33ADB /* NetworkDataFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97662648282ACE9900F33ADB /* NetworkDataFetch.swift */; };
+		9766264B282AD17800F33ADB /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9766264A282AD17800F33ADB /* Alerts.swift */; };
 		979EDA3B282AADC0002B00D9 /* VerificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979EDA3A282AADC0002B00D9 /* VerificationModel.swift */; };
 		979EDA3D282AB214002B00D9 /* String + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979EDA3C282AB214002B00D9 /* String + Extension.swift */; };
 		97B58FC0282A8035001FE192 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B58FBF282A8035001FE192 /* AppDelegate.swift */; };
@@ -31,6 +33,8 @@
 		97662642282AC93900F33ADB /* MailApiKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailApiKey.swift; sourceTree = "<group>"; };
 		97662644282AC9F700F33ADB /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 		97662646282ACBE700F33ADB /* MailResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailResponseModel.swift; sourceTree = "<group>"; };
+		97662648282ACE9900F33ADB /* NetworkDataFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetch.swift; sourceTree = "<group>"; };
+		9766264A282AD17800F33ADB /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
 		979EDA3A282AADC0002B00D9 /* VerificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationModel.swift; sourceTree = "<group>"; };
 		979EDA3C282AB214002B00D9 /* String + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Extension.swift"; sourceTree = "<group>"; };
 		97B58FBC282A8035001FE192 /* MailValidate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MailValidate.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +68,7 @@
 			children = (
 				97662642282AC93900F33ADB /* MailApiKey.swift */,
 				97662644282AC9F700F33ADB /* NetworkRequest.swift */,
+				97662648282ACE9900F33ADB /* NetworkDataFetch.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -120,6 +125,7 @@
 			children = (
 				97B58FE7282A91CF001FE192 /* Cells */,
 				97B58FEA282A93C2001FE192 /* VerificationVC */,
+				9766264A282AD17800F33ADB /* Alerts.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -260,11 +266,13 @@
 				97B58FE4282A8C9A001FE192 /* VerificationButton.swift in Sources */,
 				97B58FDD282A8630001FE192 /* Color + Extension.swift in Sources */,
 				97662643282AC93900F33ADB /* MailApiKey.swift in Sources */,
+				9766264B282AD17800F33ADB /* Alerts.swift in Sources */,
 				97B58FE2282A88B9001FE192 /* MailTextField.swift in Sources */,
 				979EDA3D282AB214002B00D9 /* String + Extension.swift in Sources */,
 				97B58FD9282A8483001FE192 /* StatusLabel.swift in Sources */,
 				97B58FE0282A880E001FE192 /* UIStackView + Extension.swift in Sources */,
 				97B58FC0282A8035001FE192 /* AppDelegate.swift in Sources */,
+				97662649282ACE9900F33ADB /* NetworkDataFetch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

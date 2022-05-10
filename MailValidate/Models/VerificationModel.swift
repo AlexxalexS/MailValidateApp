@@ -9,7 +9,7 @@ import Foundation
 
 class VerificationModel {
 
-    private let mailsArray = ["@gmail.com", "@yandex.ru", "@yahoo.com"]
+    private let mailsArray = ["@gmail.com", "@yandex.ru", "@yahoo.com", "@mail.ru", "@yandex.ru", "@hotmail.com", "@outlook.com", "@yahoo.co.uk"]
 
     public var nameMail = String()
     public var filteredMailArray = [String]()
