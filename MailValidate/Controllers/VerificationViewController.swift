@@ -26,7 +26,7 @@ class VerificationViewController: UIViewController {
         arrangedSubviews: [
             mailTextField,
             verificationButton,
-            collectionView,
+            collectionView
         ],
         axis: .vertical,
         spacing: 20
@@ -37,6 +37,7 @@ class VerificationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        setupNotification()
         setupViews()
         setDelegates()
         setConstraints()
@@ -47,6 +48,23 @@ class VerificationViewController: UIViewController {
         view.addSubview(statusLabel)
         view.addSubview(stackView)
         setupButtonTarget()
+    }
+
+    private func setupNotification() {
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+
+    @objc private func keyboardWillShow(notification: NSNotification) {
+        guard let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else {
+            return
+        }
+
+        view.frame.origin.y = 0 - keyboardSize.height
+    }
+
+    @objc private func keyboardWillHide(notification: NSNotification) {
+        view.frame.origin.y = 0
     }
 
     private func setupButtonTarget() {
@@ -198,9 +216,9 @@ extension VerificationViewController {
         ])
 
         NSLayoutConstraint.activate([
-            statusLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 300),
+            statusLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor),
             statusLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
-            statusLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 20)
+            statusLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20)
         ])
 
         NSLayoutConstraint.activate([
@@ -208,7 +226,7 @@ extension VerificationViewController {
             stackView.topAnchor.constraint(equalTo: statusLabel.bottomAnchor, constant: 2),
             stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
-            stackView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0)
+            stackView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -10)
         ])
     }
 }

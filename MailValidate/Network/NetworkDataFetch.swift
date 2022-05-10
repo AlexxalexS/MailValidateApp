@@ -7,12 +7,12 @@
 
 import Foundation
 
-class NetworkDataFetch {
+final class NetworkDataFetch {
 
     static let shared = NetworkDataFetch()
     private init() {}
 
-    func fetchMail(verifiableMail: String, response: @escaping(MailResponseModel?, Error?) -> Void) {
+    final func fetchMail(verifiableMail: String, response: @escaping(MailResponseModel?, Error?) -> Void) {
         NetworkRequest.shared.requestDate(verifiableMail: verifiableMail) { result in
             switch result {
             case .success(let data):

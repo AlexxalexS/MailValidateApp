@@ -37,6 +37,7 @@ class MailTextField: UITextField {
         leftViewMode = .always
         clearButtonMode = .always
         returnKeyType = .done
+        keyboardType = .emailAddress
         placeholder = "Enter mail"
         font = UIFont(name: "Apple SD Gothic New", size: 20)
         tintColor = .textfieldTintColor
